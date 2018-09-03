@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import { configureAnchors } from 'react-scrollable-anchor'
 
 const Wrapper = styled.div`
   position: fixed;
@@ -40,10 +41,20 @@ const HeaderList = styled.div`
 const HeaderListItem = styled.a`
   width: 80px;
   text-align: center;
+  color: #737777;
+  text-decoration: none;
+
+  &:hover{
+    color: #262324;
+  }
 `
 
 
 class Header extends Component {
+  componentDidMount() {
+    configureAnchors({ offset: -50, scrollDuration: 1000 })
+  }
+
   render() {
     return (
       <Wrapper>
@@ -52,10 +63,10 @@ class Header extends Component {
             <p>Chih-Sheng Huang</p>
           </HeaderName>
           <HeaderList>
-            <HeaderListItem>About</HeaderListItem>
-            <HeaderListItem>Projects</HeaderListItem>
-            <HeaderListItem>Skills</HeaderListItem>
-            <HeaderListItem>Contact</HeaderListItem>
+            <HeaderListItem href='#about'>About</HeaderListItem>
+            <HeaderListItem href='#projects'>Projects</HeaderListItem>
+            <HeaderListItem href='#skills'>Skills</HeaderListItem>
+            <HeaderListItem href='#contact'>Contact</HeaderListItem>
           </HeaderList>
         </Container>
       </Wrapper>
