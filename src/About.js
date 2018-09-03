@@ -49,6 +49,7 @@ const ProfileDescHighlight = styled.span`
   color: #2bb7c6;
 `
 
+
 class About extends Component {
   render() {
     return (
