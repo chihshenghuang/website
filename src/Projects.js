@@ -78,7 +78,7 @@ class Projects extends Component {
     For Reddit like voting system, I deployed it on the {<ProjectDescHighlight>Heroku</ProjectDescHighlight>} service.
             </ProjectDesc>
             <ProjectContainer>
-              <a href='http://ec2-18-191-250-169.us-east-2.compute.amazonaws.com:3001/'>
+              <a href='http://ec2-18-191-250-169.us-east-2.compute.amazonaws.com/'>
                 <ProjectImage src='/images/project1.png' />
               </a>
               <a href='https://powerful-mountain-27404.herokuapp.com/login'>
