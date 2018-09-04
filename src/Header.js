@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   text-align: center;
   background: white;
   z-index: 999;
-  border-bottom: 2px solid #d9e0e0;
+  border-bottom: 3px solid #d9e0e0;
   height: 100px;
 `
 const Container = styled(Wrapper) `
@@ -31,7 +31,7 @@ const HeaderName = styled.div`
 `
 const HeaderList = styled.div`
   display: flex;
-  font-size: 22px;
+  font-size: 24px;
   justify-content: space-around;
   align-items:center;
   color: #737777;

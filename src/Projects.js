@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Wrapper = styled.div`
-  background: #2bb7c6;
+  //background: #2bb7c6;
+  background: url('/images/about-bg2.jpg');
+  background-size: 100%;
   display:flex;
   width: 100%;
   height: 100vh;

@@ -56,7 +56,7 @@ class About extends Component {
       <ScrollableAnchor id='about'>
         <Wrapper>
           <Container>
-            <ProfileImage src={'/images/photo.JPG'} />
+            <ProfileImage src={'/images/photo.jpg'} />
             <ProfileContainer>
               <ProfileLabel>Hi, I am Chih Sheng!</ProfileLabel>
               <ProfileDesc>
