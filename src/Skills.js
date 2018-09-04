@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Wrapper = styled.div`
-  background: url('/images/about-bg3.jpg');
+  background: url('/images/about-bg5-blur.jpg');
   height: 100vh;
   width: 100%;
   display: flex;

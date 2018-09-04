@@ -4,28 +4,36 @@ import PropTypes from 'prop-types'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Wrapper = styled.div`
-  background: white;
+  background: url('/images/about-bg6-blur.jpg');
   display: block;
   width: 100%;
   left: 0;
-  margin-top: 100px;
+  //margin-top: 100px;
   margin-left: 0;
   height: 100vh;
+  background-size: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 `
 
-const Container = styled(Wrapper) `
+const Container = styled.div`
+  background: rgb(255, 255, 255, 0.8);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 90%;
-  height: 550px;
+  width: 85%;
+  height: 400px;
+  margin-top: 80px;
   padding-left: 5%;
   line-height: 165%;
+  border-radius: 10px;
+  padding: 40px 30px;
 `
 
 const ProfileImage = styled.img`
   display: inline-block;
-  width: 320px;
+  width: 300px;
   border-radius: 50%;
   margin: 30px 50px;
 `

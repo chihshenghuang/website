@@ -11,10 +11,10 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   text-align: center;
-  background: white;
+  background: rgb(0, 0, 0, 0.35);
   z-index: 999;
-  border-bottom: 3px solid #d9e0e0;
-  height: 100px;
+  //border-bottom: 3px solid #d9e0e0;
+  height: 80px;
 `
 const Container = styled(Wrapper) `
   display: flex;
@@ -25,34 +25,34 @@ const Container = styled(Wrapper) `
 
 const HeaderName = styled.div`
   display: inline;
-  font-size: 32px;
-  color: #2bb7c6;
+  font-size: 26px;
+  color: #e0e2e2;
   margin-left: 5%;
 `
 const HeaderList = styled.div`
   display: flex;
-  font-size: 24px;
+  font-size: 22px;
   justify-content: space-around;
   align-items:center;
-  color: #737777;
+  color: white;
   width: 30%;
   height: 80px;
 `
 const HeaderListItem = styled.a`
   width: 80px;
   text-align: center;
-  color: #737777;
+  color: white;
   text-decoration: none;
 
   &:hover{
-    color: #262324;
+    color: #EFDD8D;
   }
 `
 
 
 class Header extends Component {
   componentDidMount() {
-    configureAnchors({ offset: -50, scrollDuration: 1000 })
+    configureAnchors({ offset: 0, scrollDuration: 1000 })
   }
 
   render() {

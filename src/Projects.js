@@ -5,7 +5,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Wrapper = styled.div`
   //background: #2bb7c6;
-  background: url('/images/about-bg2-blur.jpg');
+  background: url('/images/about-bg2-blur2.jpg');
   background-size: 100%;
   display:flex;
   width: 100%;
@@ -25,7 +25,6 @@ const Container = styled.div`
   flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
-  z-index: 20;
 `
 
 const ProjectLabel = styled.div`
