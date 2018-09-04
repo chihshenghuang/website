@@ -3,15 +3,21 @@ import styled from 'styled-components'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Wrapper = styled.div`
-  background: url('/images/about-bg5-blur.jpg');
+  background: white;//url('/images/about-bg6-blur.jpg');
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+`
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  background: url('/images/skills-bg2-small.jpg');
   background-size: 100%;
 `
 
+/*
 const Container = styled.div`
   background: rgb(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -23,7 +29,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 `
-
+*/
 const SkillImage = styled.img`
   display: inline-block;
   width: 150px;
@@ -36,16 +42,6 @@ class Skills extends Component {
       <ScrollableAnchor id='skills'>
         <Wrapper>
           <Container>
-            <SkillImage src={'/images/react.png'} />
-            <SkillImage src={'/images/redux.png'} />
-            <SkillImage src={'/images/html.png'} />
-            <SkillImage src={'/images/css.png'} />
-            <SkillImage src={'/images/js.jpg'} />
-            <SkillImage src={'/images/git.png'} />
-            <SkillImage src={'/images/jquery.jpg'} />
-            <SkillImage src={'/images/aws.jpg'} />
-            <SkillImage src={'/images/docker.jpg'} />
-            <skillImage src={'/images/swagger.png'} />
           </Container>
         </Wrapper>
       </ScrollableAnchor>

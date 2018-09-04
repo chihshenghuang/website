@@ -22,7 +22,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 85%;
+  width: 80%;
   height: 400px;
   margin-top: 80px;
   padding-left: 5%;
@@ -39,8 +39,9 @@ const ProfileImage = styled.img`
 `
 
 const ProfileContainer = styled.div`
-  width: 400px;
-  margin: 10px 10px;
+  width: 450px;
+  margin: 10px 30px;
+  margin-bottom: 30px;
   color: #686465;
 `
 const ProfileLabel = styled.label`

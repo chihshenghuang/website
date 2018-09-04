@@ -29,9 +29,13 @@ const Container = styled.div`
 
 const ProjectLabel = styled.div`
   font-size: 24px;
+  margin: 10px 0;
   color: #585354;
 `
-
+const ProjectLabelSmall = styled.div`
+  font-size: 20px;
+  color: #585354;
+`
 const ProjectDesc = styled.div`
   font-size: 16px;
   color: #737777;
@@ -49,12 +53,14 @@ const ProjectImage = styled.img`
   width: 420px;
   height: 220px;
   background-size: 100%;
-
+  border-radius: 5px;
   &:hover {
     opacity: .3;
   }
 `
-
+const ProjectDescHighlight = styled.span`
+  color: #2bb7c6;
+`
 
 class Projects extends Component {
   render() {
@@ -63,12 +69,12 @@ class Projects extends Component {
         <Wrapper>
           <Container>
             <ProjectLabel>
-              I have two projects which are running on AWS and Heroku!!
+              My Projects
             </ProjectLabel>
             <ProjectDesc>
-              I learned React, Redux by making two projects, online chat room and Reddit like voting system.
-              For online chat room, I used React, Redux, Socket.io and Node.js to build up this application, then I deployed the project to my AWS EC2 instance.
-              For Reddit like voting system, I deployed it on the Heroku service.
+              I learned {<ProjectDescHighlight>React</ProjectDescHighlight>}, {<ProjectDescHighlight>Redux</ProjectDescHighlight>} by making two projects, online chat room and Reddit like voting system.
+              For online chat room, I used React, Redux, Socket.io and Node.js to build up this application, then I deployed the project to my {<ProjectDescHighlight>AWS EC2</ProjectDescHighlight>} instance.
+    For Reddit like voting system, I deployed it on the {<ProjectDescHighlight>Heroku</ProjectDescHighlight>} service.
             </ProjectDesc>
             <ProjectContainer>
               <a href='http://ec2-18-191-250-169.us-east-2.compute.amazonaws.com:3001/'>
