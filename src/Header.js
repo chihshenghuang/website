@@ -11,12 +11,12 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   text-align: center;
-  background: rgb(0, 0, 0, 0.35);
   z-index: 999;
-  //border-bottom: 3px solid #d9e0e0;
   height: 60px;
 `
 const Container = styled(Wrapper) `
+  background: rgb(0, 0, 0);
+  opacity: 0.65;
   display: flex;
   align-items: center;
   justify-content: space-around;

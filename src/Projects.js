@@ -14,7 +14,8 @@ const Wrapper = styled.div`
   align-items:center;
 `
 const Container = styled.div`
-  background: rgb(255, 255, 255, 0.9);
+  background: rgb(255, 255, 255);
+  opacity: 0.9; // For Safari
   border-radius: 10px;
   padding: 40px 30px;
   width: 80%;

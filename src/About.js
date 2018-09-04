@@ -18,7 +18,8 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-  background: rgb(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255);
+  opacity: 0.8; // For Safari
   display: flex;
   justify-content: space-evenly;
   align-items: center;
