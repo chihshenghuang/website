@@ -5,7 +5,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Wrapper = styled.div`
   //background: #2bb7c6;
-  background: url('/images/about-bg2.jpg');
+  background: url('/images/about-bg2-blur.jpg');
   background-size: 100%;
   display:flex;
   width: 100%;
