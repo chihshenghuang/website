@@ -18,6 +18,16 @@ const Container = styled.div`
   padding: 40px 30px;
   width: 80%;
   height: 400px;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const SkillImage = styled.img`
+  display: inline-block;
+  width: 150px;
+  border-radius: 50%;
 `
 
 class Skills extends Component {
@@ -26,6 +36,16 @@ class Skills extends Component {
       <ScrollableAnchor id='skills'>
         <Wrapper>
           <Container>
+            <SkillImage src={'/images/react.png'} />
+            <SkillImage src={'/images/redux.png'} />
+            <SkillImage src={'/images/html.png'} />
+            <SkillImage src={'/images/css.png'} />
+            <SkillImage src={'/images/js.jpg'} />
+            <SkillImage src={'/images/git.png'} />
+            <SkillImage src={'/images/jquery.jpg'} />
+            <SkillImage src={'/images/aws.jpg'} />
+            <SkillImage src={'/images/docker.jpg'} />
+            <skillImage src={'/images/swagger.png'} />
           </Container>
         </Wrapper>
       </ScrollableAnchor>

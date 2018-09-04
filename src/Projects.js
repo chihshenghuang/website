@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   align-items:center;
 `
 const Container = styled.div`
-  background: rgb(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 40px 30px;
   width: 80%;
@@ -25,6 +25,7 @@ const Container = styled.div`
   flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
+  z-index: 20;
 `
 
 const ProjectLabel = styled.div`
