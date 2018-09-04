@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   background: rgb(0, 0, 0, 0.35);
   z-index: 999;
   //border-bottom: 3px solid #d9e0e0;
-  height: 80px;
+  height: 60px;
 `
 const Container = styled(Wrapper) `
   display: flex;
@@ -25,7 +25,7 @@ const Container = styled(Wrapper) `
 
 const HeaderName = styled.div`
   display: inline;
-  font-size: 26px;
+  font-size: 24px;
   color: #e0e2e2;
   margin-left: 5%;
 `

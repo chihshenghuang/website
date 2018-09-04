@@ -15,25 +15,12 @@ const Container = styled.div`
   height: 100%;
   background: url('/images/skills-bg2-small.jpg');
   background-size: 100%;
+  text-align: center;
 `
-
-/*
-const Container = styled.div`
-  background: rgb(255, 255, 255, 0.8);
-  border-radius: 10px;
-  padding: 40px 30px;
-  width: 80%;
-  height: 400px;
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-`
-*/
-const SkillImage = styled.img`
-  display: inline-block;
-  width: 150px;
-  border-radius: 50%;
+const SkillsLabel = styled.div`
+  color: white;
+  font-size: 36px;
+  margin: 100px 0;
 `
 
 class Skills extends Component {
@@ -42,6 +29,7 @@ class Skills extends Component {
       <ScrollableAnchor id='skills'>
         <Wrapper>
           <Container>
+            <SkillsLabel>My Software Skills</SkillsLabel>
           </Container>
         </Wrapper>
       </ScrollableAnchor>
