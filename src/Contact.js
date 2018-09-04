@@ -30,6 +30,11 @@ const ContactDesc = styled.div`
   margin: 15px;
   color: white;
 `
+const ContactDescHightlight = styled.span`
+  color: #00f2f2;
+`
+
+
 const ContactImage = styled.img`
   display:inline-block;
   width: 100px;
@@ -47,7 +52,7 @@ class Contact extends Component {
         <Wrapper>
           <Container>
             <ContactLabel>Contact Me!</ContactLabel>
-            <ContactDesc>If you have any questions about me, please feel free to send me an e-mail to huangcs@seas.upenn.edu.</ContactDesc>
+            <ContactDesc>If you have any questions about me, please feel free to send me an e-mail to {<ContactDescHightlight>huangcs@seas.upenn.edu</ContactDescHightlight>}</ContactDesc>
             <ContactDesc>Or you can reach me by using Linkedin, Fackbook, Instagram and GitHub!</ContactDesc>
             <div>
               <a href='https://www.linkedin.com/in/ChihShengHuang'>
