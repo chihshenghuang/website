@@ -23,25 +23,46 @@ const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @media only screen and (max-width: 768px){
+    width: 100%;
+  }
   width: 80%;
-  height: 400px;
+  @media only screen and (max-width: 1440px){
+    line-height: 180%;
+    padding: 40px 30px;
+    height: 60%;
+  }
+  @media only screen and (min-width: 1440px){
+    height: 65%;
+    line-height: 220%;
+    letter-spacing: 1.2px;
+    padding: 20px 30px;
+  }
   margin-top: 80px;
-  padding-left: 5%;
-  line-height: 165%;
   border-radius: 10px;
-  padding: 40px 30px;
 `
 
 const ProfileImage = styled.img`
   display: inline-block;
-  width: 300px;
+  @media only screen and (max-width: 1440px){
+    width: 280px;
+  }
+  @media only screen and (min-width: 1440px){
+    width: 360px;
+  }
   border-radius: 50%;
   margin: 30px 50px;
 `
 
 const ProfileContainer = styled.div`
-  width: 450px;
-  margin: 10px 30px;
+  @media only screen and (max-width: 1440px){
+    width: 600px;
+    margin: 20px 20px;
+  }
+  @media only screen and (min-width: 1440px){
+    width: 800px;
+    margin: 20px 20px;
+  }
   margin-bottom: 30px;
   color: #686465;
 `
@@ -53,7 +74,6 @@ const ProfileLabel = styled.label`
 const ProfileDesc = styled.p`
   font-size: 16px;
   height: 300px;
-  width: 500px;
 `
 const ProfileDescHighlight = styled.span`
   color: #2bb7c6;

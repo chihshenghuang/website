@@ -17,11 +17,22 @@ const Container = styled.div`
   background: rgb(255, 255, 255);
   opacity: 0.9; // For Safari
   border-radius: 10px;
-  padding: 40px 30px;
+  @media only screen and (max-width: 768px){
+    width: 100%;
+  }
   width: 80%;
-  height: 400px;
-  letter-spacing: 0.5px;
-  line-height: 150%;
+  height: 70%;
+  margin-top: 80px;
+  @media only screen and (max-width: 1440px){
+    padding: 20px 20px;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+  }
+  @media only screen and (min-width: 1440px){
+    padding: 10px 50px;
+    letter-spacing: 0.8px;
+    line-height: 180%;
+  }
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -40,7 +51,7 @@ const ProjectLabelSmall = styled.div`
 const ProjectDesc = styled.div`
   font-size: 16px;
   color: #737777;
-  width: 800px;
+  width: 100%;
   margin: 20px 0;
 `
 
@@ -51,17 +62,26 @@ const ProjectContainer = styled.div`
 `
 const ProjectImage = styled.img`
   display: inline-block;
-  width: 420px;
-  height: 220px;
+  @media only screen and (max-width: 1440px){
+    width: 420px;
+    height: 220px;
+  }
+  @media only screen and (min-width: 1440px){
+    width: 620px;
+    height: 320px;
+  }
   background-size: 100%;
   border-radius: 5px;
   &:hover {
     opacity: .3;
   }
 `
+
 const ProjectDescHighlight = styled.span`
   color: #2bb7c6;
 `
+
+
 
 class Projects extends Component {
   render() {

@@ -18,6 +18,9 @@ const Container = styled.div`
   text-align: center;
 `
 const SkillsLabel = styled.div`
+  @media only screen and (min-width: 1440px){
+    margin-top: 150px;
+  }
   color: white;
   font-size: 36px;
   margin: 100px 0;

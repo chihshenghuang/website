@@ -12,7 +12,12 @@ const Wrapper = styled.div`
   left: 0;
   text-align: center;
   z-index: 999;
-  height: 60px;
+  @media only screen and (max-width: 1440px){
+    height: 60px;
+  }
+  @media only screen and (min-width: 1440px){
+    height: 100px;
+  }
 `
 const Container = styled(Wrapper) `
   background: rgb(0, 0, 0);
